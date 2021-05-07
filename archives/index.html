@@ -84,11 +84,30 @@
     </div><!-- /.container-fluid -->
 </nav>
 
+<div class="slider">
+    <ul></ul>
+</div>
 <style type="text/css">
-    ::-webkit-scrollbar {
-    display: none; /* Chrome Safari */
+ 
+    .slide-box{
+        margin-top: 200px;
+          overflow: hidden;
+    }
+    .slide-within{
+         display: -webkit-box;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling:touch;
+        padding-bottom: 10px;
+         margin-bottom: -10px;
+    }
+    .slide-item{
+        width: 200px;
+        height: 200px;
+        border:1px solid #ccc;
+        margin-right: 30px;
     }
 </style>
+
 <div class="row" style="padding-top: 70px">
     <div class="container center-block">
         <div class="col-md-2"></div>
@@ -114,8 +133,6 @@
 
         <div class="col-md-2">
         </div>
-<div style="display:none">
-</div>
     </div>
 </div>
 
