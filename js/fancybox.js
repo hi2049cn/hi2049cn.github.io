@@ -16,7 +16,7 @@ function wrapImageWithFancyBox() {
             if (idx != -1) {
                 src = src.substring(0, idx);
             }
-            $imageWrapLink = $image.wrap('<a href="' + src + '"></a>').parent('a');
+            $imageWrapLink = $image.wrap('<div class="image-setsizemax"> <a href="' + src + '"></a> </div>').parent('a');
         }
 
         $imageWrapLink.attr('data-fancybox', 'images');
