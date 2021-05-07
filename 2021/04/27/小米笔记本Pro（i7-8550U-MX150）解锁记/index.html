@@ -47,17 +47,18 @@
 -->
 </div>
 
-<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#BIOS-%E9%99%8D%E7%BA%A7%EF%BC%88%E5%8F%AF%E9%80%89%EF%BC%89"><span class="toc-text">BIOS 降级（可选）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BIOS%E4%B8%8D%E9%99%8D%E7%BA%A7%E8%A7%A3%E9%94%81%E7%94%B5%E5%8E%8B%E8%B0%83%E8%8A%82%E5%8A%9F%E8%83%BD"><span class="toc-text">BIOS不降级解锁电压调节功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E8%80%81%E7%89%88%E6%9C%ACXTU"><span class="toc-text">安装老版本XTU</span></a></li></ol>
+<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#BIOS-%E9%99%8D%E7%BA%A7%EF%BC%88%E5%8F%AF%E9%80%89%EF%BC%89"><span class="toc-text">BIOS 降级（可选）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#BIOS%E4%B8%8D%E9%99%8D%E7%BA%A7%E8%A7%A3%E9%94%81%E7%94%B5%E5%8E%8B%E8%B0%83%E8%8A%82%E5%8A%9F%E8%83%BD"><span class="toc-text">BIOS不降级解锁电压调节功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E8%80%81%E7%89%88%E6%9C%ACXTU"><span class="toc-text">安装老版本XTU</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E5%B9%B8%E5%AE%89%E8%A3%85%E8%BF%87%E6%96%B0%E7%89%88%E6%9C%ACXTU%E5%A6%82%E4%BD%95%E5%AE%8C%E5%85%A8%E5%8D%B8%E8%BD%BD"><span class="toc-text">不幸安装过新版本XTU如何完全卸载</span></a></li></ol>
 <blockquote>
 <p>雷带善人还是良心，新版小米笔记本Pro让哥们毫无购买的欲望，17版小米笔记本Pro解锁功耗还能再战两年，这波直接立省100%~</p>
 </blockquote>
-<p>首先下载小米笔记本折腾资源整理：<a target="_blank" rel="noopener" href="https://github.com/Cr0wTom/Mi-Notebook-Pro-Mods">https://github.com/Cr0wTom/Mi-Notebook-Pro-Mods</a> 以及 XTU6.4安装包：</p>
+<p>首先下载<a target="_blank" rel="noopener" href="https://github.com/Cr0wTom/Mi-Notebook-Pro-Mods">小米笔记本折腾资源整理</a> 以及 <a target="_blank" rel="noopener" href="https://github.com/hi2049cn/hi2049cn.github.io/blob/main/file/XTU6.4.exe">XTU6.4安装包</a></p>
 <h3 id="BIOS-降级（可选）"><a href="#BIOS-降级（可选）" class="headerlink" title="BIOS 降级（可选）"></a>BIOS 降级（可选）</h3><p>新版本BIOS不能调节CPU的电压，因此降回老版本BIOS。新版本BIOS也有办法解锁，但是我选择直接降版本一劳永逸~</p>
 <p>首先在<code>Mi-Notebook-Pro-Mods\BIOS Collection</code>里找到需要的BIOS的压缩包，解压，然后找一个128G以下的U盘格式化成FAT32格式，将解压后的所有文件拷贝过去。<strong>然后使用文本编辑器编辑<code>\platform.ini</code>，将<code>[Bios_Version_Check]</code>下的<code>Flag</code>值改为<code>0</code></strong></p>
 <p>保存后关机并连接电源，重启按F12，选择从U盘启动，按一下Enter键输入 <code>unlockme.nsh</code> 按下Enter等待重启。重启后再按F12键从U盘启动，按Enter键后输入 <code>flash.nsh</code>，等待机器重启降级，完成后再次重启即降级成功，期间不可拔掉电源和U盘。</p>
 <h3 id="BIOS不降级解锁电压调节功能"><a href="#BIOS不降级解锁电压调节功能" class="headerlink" title="BIOS不降级解锁电压调节功能"></a>BIOS不降级解锁电压调节功能</h3><p>国外大神PaveILJ和来自4pda的Cyb制作了能修改BIOS 0502和0603电压的脚本（注意：由于脚本对BIOS进行修改，请先对重要数据进行备份。另外，BIOS有可能不能被后续升级）</p>
 <p>在<code>Mi-Notebook-Pro-Mods\Patches</code>里找到<code>voltage_unlock.cmd</code>，右键以管理员运行，运行完后重启电脑完成解锁。</p>
-<h3 id="安装老版本XTU"><a href="#安装老版本XTU" class="headerlink" title="安装老版本XTU"></a>安装<strong>老版本</strong>XTU</h3><p>最新版XTU亲测无法调压（即便已经刷回旧版本或解锁），因此安装6.4版本XTU</p>
+<h3 id="安装老版本XTU"><a href="#安装老版本XTU" class="headerlink" title="安装老版本XTU"></a>安装<strong>老版本</strong>XTU</h3><p>最新版XTU亲测无法调压（即便已经刷回旧版本或解锁），因此建议安装6.4版本XTU。安装时会报错“attempted to install on an unsupported platform”，不要点确定关闭页面，使用<code>Win+R</code>打开<code>运行</code>，输入<code>%temp%</code>打开Temp文件夹，会有一个类似 Intel(R)_Extreme_Tuning_Utility_xxxxxx_000_Intel_XtuInstaller.msi.log 的文件，在里面找到 Running installation inside multi-package transaction 字段，后面的地址就是XTU的实际安装文件，在此目录下按Shift同时右键，点击<code>在 此处打开 PowerShell 窗口</code> ，输入<code> msiexec /i Intel_XtuInstaller.msi DISABLEPLATFORMCHECK=1</code>，即可打开安装程序。</p>
+<h3 id="不幸安装过新版本XTU如何完全卸载"><a href="#不幸安装过新版本XTU如何完全卸载" class="headerlink" title="不幸安装过新版本XTU如何完全卸载"></a>不幸安装过新版本XTU如何完全卸载</h3><p>亲测，一大坑，如果安装过新版本XTU，卸载后</p>
 
 
 <!--<a href="http://hi2049cn.github.io/2021/04/27/%E5%B0%8F%E7%B1%B3%E7%AC%94%E8%AE%B0%E6%9C%ACPro%EF%BC%88i7-8550U-MX150%EF%BC%89%E8%A7%A3%E9%94%81%E8%AE%B0/#disqus_thread" class="article-comment-link">Comments</a>
