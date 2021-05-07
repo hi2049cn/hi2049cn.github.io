@@ -10,8 +10,7 @@ function wrapImageWithFancyBox() {
         var $image = $(this);
         var imageCaption = $image.attr('alt');
         var $imageWrapLink = $image.parent('a');
-
-        if ($imageWrapLink.size() < 1) {
+        if ($imageWrapLink.length < 1) {
             var src = this.getAttribute('src');
             var idx = src.lastIndexOf('?');
             if (idx != -1) {
