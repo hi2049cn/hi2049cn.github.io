@@ -42,7 +42,7 @@ li {
   margin-left: 10px;
 }
 blockquote {
-  color: #d3d3d3;
+  color: #312520;
   border-left: 4px #d3d3d3 solid;
   padding-left: 5px;
   margin-left: 20px;
@@ -52,7 +52,7 @@ a {
   cursor: crosshair;
   border-bottom: 1px dashed Red;
   padding: 1px;
-  color: #000;
+  color: #3b2e7e;
 }
 a:hover {
   background-color: LightGrey;
@@ -100,15 +100,15 @@ table tr:nth-child(odd) {
   background: #f4f4f4;
 }
 .toc a {
-  color: #d3d3d3;
+  color: #725e82;
   border-bottom: none;
 }
 .toc a:hover {
-  color: #000;
+  color: #56004f;
   border-bottom: none;
 }
 .toc-item {
-  color: #d3d3d3;
+  color: #725e82;
   border-bottom: none;
 }
 .toc-item a:hover {
@@ -119,12 +119,12 @@ table tr:nth-child(odd) {
 }
 pre,
 .highlight {
-  background: #f7f7f7;
+  background: #1d1f21;
   margin: 20px 0;
   padding: 15px;
   overflow: auto;
   font-size: $code-font-size;
-  color: #4d4d4c;
+  color: #c5c8c6;
   line-height: $line-height-code-block;
 }
 .highlight .gutter pre {
@@ -136,9 +136,10 @@ code {
 }
 code {
   word-break: break-all;
-  background: $gainsboro;
-  text-shadow: 0 1px #fff;
+  background: #1d1f21;
   padding: 0 0.3em;
+  color: #c5c8c6;
+  font-size: $code-font-size;
 }
 pre code {
   background: none;
@@ -148,7 +149,7 @@ pre code {
 .highlight pre {
   border: none;
   margin: 0;
-  padding: 1px;
+  padding: 0;
 }
 .highlight table {
   margin: 0;
@@ -161,7 +162,7 @@ pre code {
 }
 .highlight figcaption {
   font-size: 0.85em;
-  color: #8e908c;
+  color: #969896;
   line-height: 1em;
   margin-bottom: 1em;
 }
@@ -176,7 +177,7 @@ pre code {
   height: 20px;
 }
 pre .comment {
-  color: #8e908c;
+  color: #969896;
 }
 pre .variable,
 pre .attribute,
@@ -190,7 +191,7 @@ pre .html .doctype,
 pre .css .id,
 pre .css .class,
 pre .css .pseudo {
-  color: #c82829;
+  color: #c66;
 }
 pre .number,
 pre .preprocessor,
@@ -199,11 +200,11 @@ pre .literal,
 pre .params,
 pre .constant,
 pre .command {
-  color: #f5871f;
+  color: #de935f;
 }
 pre .ruby .class .title,
 pre .css .rules .attribute {
-  color: #718c00;
+  color: #b5bd68;
 }
 pre .string,
 pre .value,
@@ -214,11 +215,11 @@ pre .xml .cdata,
 pre .special,
 pre .number,
 pre .formula {
-  color: #718c00;
+  color: #b5bd68;
 }
 pre .title,
 pre .css .hexcolor {
-  color: #3e999f;
+  color: #8abeb7;
 }
 pre .function,
 pre .python .decorator,
@@ -228,9 +229,9 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #4271ae;
+  color: #81a2be;
 }
 pre .keyword,
 pre .javascript .function {
-  color: #8959a8;
+  color: #b294bb;
 }
