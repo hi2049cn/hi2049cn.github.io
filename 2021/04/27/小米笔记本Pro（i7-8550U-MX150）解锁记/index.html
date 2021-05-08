@@ -153,8 +153,10 @@
 <noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 -->
 
-<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<link rel="stylesheet" href="/css/gitalk.css">
+<script src="/js/md5.min.js"></script>
+<script src="/js/gitalk.min.js"></script>
+
 <section id="comments">
     <div class="gitalk" style="width:50%;margin:auto;">
       <div id="gitalk-container"></div>
@@ -165,7 +167,7 @@
           repo: 'hi2049blogcomment',
           owner: 'hi2049cn',
           admin: ['hi2049cn'],
-          id: location.pathname,      // Ensure uniqueness and length less than 50
+          id: md5(location.pathname),      // Ensure uniqueness and length less than 50
           distractionFreeMode: false  // Facebook-like distraction free mode
         })
         gitalk.render('gitalk-container')
