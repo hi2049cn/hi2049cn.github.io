@@ -235,10 +235,3 @@ pre .keyword,
 pre .javascript .function {
   color: #b294bb;
 }
-.post-copyright {
-  background-color: #f9f9f9;
-  border-left: 3px solid #ff1700;
-  list-style: none;
-  margin: 2em 0 0;
-  padding: 0.5em 1em;
-}
