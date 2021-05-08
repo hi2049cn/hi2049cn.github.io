@@ -23,3 +23,6 @@ li.title:hover {
   background-color: #fff;
   box-shadow: none;
 }
+::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}
