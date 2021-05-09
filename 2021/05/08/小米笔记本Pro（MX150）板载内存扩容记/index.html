@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     
-	   <link href="/css/main.css?v=3" rel="stylesheet" type="text/css" />
+	   <link href="//main.css?v=" rel="stylesheet" type="text/css" />
     
         
 <script src="/js/util.js"></script>
@@ -27,27 +27,10 @@
     <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom feed">
 
     
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=3"/>
-    
     
 
 
     <!-- fancybox support -->
-    
-    
-    
-<script src="/js/jquery.min.js"></script>
-
-    
-<link rel="stylesheet" href="/css/jquery.fancybox.min.css">
-
-    
-<script src="/js/jquery.fancybox.min.js"></script>
-
-    
-<script src="/js/fancybox.js"></script>
-
-
     
 <meta name="generator" content="Hexo 5.4.0"></head>
 
@@ -68,7 +51,7 @@
 </div>
 
 
-<p>挖坑占着先</p>
+<p>挖坑占着先..</p>
 <hr/><div><ul class="post-copyright"><li><strong>本文作者</strong>：hi2049</li><li><strong>本文链接</strong>：<a href="http://hi2049cn.github.io/2021/05/08/小米笔记本Pro（MX150）板载内存扩容记/">http://hi2049cn.github.io/2021/05/08/小米笔记本Pro（MX150）板载内存扩容记/</a></li><li class="post-copyright-license"><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i>BY-NC-SA</i></a> 许可协议。转载请注明出处！</li></ul></div>
 
 <!--<a href="http://hi2049cn.github.io/2021/05/08/%E5%B0%8F%E7%B1%B3%E7%AC%94%E8%AE%B0%E6%9C%ACPro%EF%BC%88MX150%EF%BC%89%E6%9D%BF%E8%BD%BD%E5%86%85%E5%AD%98%E6%89%A9%E5%AE%B9%E8%AE%B0/#disqus_thread" class="article-comment-link">Comments</a>
@@ -103,12 +86,12 @@
       <div id="gitalk-container"></div>
       <script type="text/javascript">
         var gitalk = new Gitalk({
-          clientID: 'c3e146ce2d00ca6661c7',
-          clientSecret: '15d510de27b99abd67e311c45c133aec123f94a4',
-          repo: 'hi2049blogcomment',
-          owner: 'hi2049cn',
-          proxy: 'https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token',
-          admin: ['hi2049cn'],
+          clientID: '{{ theme.gitalk.clientID }}',
+          clientSecret: '{{ theme.gitalk.clientSecret }}',
+          repo: '{{ theme.gitalk.repo }}',
+          owner: '{{ theme.gitalk.owner }}',
+          proxy: '{{ theme.gitalk.proxy }}',
+          admin: ['{{ theme.gitalk.admin }}'],
           id: md5(location.pathname),      // Ensure uniqueness and length less than 50
           distractionFreeMode: false  // Facebook-like distraction free mode
         })
